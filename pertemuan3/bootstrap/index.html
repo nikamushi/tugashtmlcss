@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Bootstrap</title>
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 col-xl-6">
+          <!-- Profile Header -->
+          <div class="row align-items-center py-5">
+            <!-- Profile Picture -->
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+              <img
+                src="img/profile.jpg"
+                alt="Profile Picture"
+                class="profile-img rounded-circle"
+              />
+            </div>
+
+            <!-- Profile Info -->
+            <div class="col-12 col-md-8">
+              <!-- Username & Buttons -->
+              <div
+                class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-3 gap-3"
+              >
+                <h2 class="mb-0 me-3">anggasaputtraaa</h2>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-light btn-sm">
+                    Edit profile
+                  </button>
+                  <button class="btn btn-outline-light btn-sm">
+                    View archive
+                  </button>
+                  <button class="btn btn-link text-white p-0">
+                    <i class="fas fa-cog"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Stats -->
+              <div class="row text-center text-sm-start mb-3">
+                <div class="col-4">
+                  <div class="fw-bold">5</div>
+                  <div class="small">posts</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold">521</div>
+                  <div class="small">followers</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold">387</div>
+                  <div class="small">following</div>
+                </div>
+              </div>
+
+              <!-- Bio -->
+              <div>
+                <div class="fw-bold">baskara</div>
+                <div class="text-muted">Mental Health Service</div>
+                <div class="text-muted">✉️ autoruns18@gmail.com</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stories Section -->
+          <div class="d-flex justify-content-center gap-3 py-4">
+            <div class="text-center">
+              <img
+                src="img/highlight1.jpg"
+                alt="Story 1"
+                class="story-img rounded-circle mb-2"
+              />
+              <p>🚮</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="img/highlight2.jpg"
+                alt="Story 2"
+                class="story-img rounded-circle mb-2"
+              />
+              <p>🐈</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="img/highlight3.jpg"
+                alt="Story 3"
+                class="story-img rounded-circle mb-2"
+              />
+              <p>👾</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="img/highlight4.jpg"
+                alt="Story 4"
+                class="story-img rounded-circle mb-2"
+              />
+              <p>📘</p>
+            </div>
+            <div class="text-center">
+              <div
+                class="story-img rounded-circle mb-2 d-flex align-items-center justify-content-center border border-2"
+                style="
+                  border-style: dashed !important;
+                  border-color: var(--ig-text-secondary) !important;
+                "
+              >
+                <i class="fas fa-plus text-muted"></i>
+              </div>
+              <div class="small text-muted">New</div>
+            </div>
+          </div>
+
+          <!-- Navigation Tabs -->
+          <div class="border-top border-custom pt-3">
+            <ul class="nav nav-tabs justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active px-4" href="#">
+                  <i class="fas fa-th me-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">
+                  <i class="fas fa-play-circle me-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">
+                  <i class="fas fa-bookmark me-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">
+                  <i class="fas fa-user-tag me-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Posts Grid -->
+          <div class="row g-1 mt-3">
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan1.png"
+                  alt="Post 1"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>45</span>
+                    <span><i class="fas fa-comment me-1"></i>12</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan2.png"
+                  alt="Post 2"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>78</span>
+                    <span><i class="fas fa-comment me-1"></i>23</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan3.png"
+                  alt="Post 3"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>156</span>
+                    <span><i class="fas fa-comment me-1"></i>34</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan4.png"
+                  alt="Post 4"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>92</span>
+                    <span><i class="fas fa-comment me-1"></i>18</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan5.png"
+                  alt="Post 5"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>203</span>
+                    <span><i class="fas fa-comment me-1"></i>67</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="post-item position-relative">
+                <img
+                  src="img/postingan6.jpeg"
+                  alt="Post 6"
+                  class="post-img w-100"
+                />
+                <div
+                  class="post-overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex gap-3 text-white">
+                    <span><i class="fas fa-heart me-1"></i>134</span>
+                    <span><i class="fas fa-comment me-1"></i>29</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Footer -->
+    <footer class="instagram-footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-6">
+            <!-- Footer Links -->
+            <div class="footer-links">
+              <a href="#" class="footer-link">Meta</a>
+              <a href="#" class="footer-link">About</a>
+              <a href="#" class="footer-link">Blog</a>
+              <a href="#" class="footer-link">Jobs</a>
+              <a href="#" class="footer-link">Help</a>
+              <a href="#" class="footer-link">API</a>
+              <a href="#" class="footer-link">Privacy</a>
+              <a href="#" class="footer-link">Terms</a>
+              <a href="#" class="footer-link">Locations</a>
+              <a href="#" class="footer-link">Instagram Lite</a>
+              <a href="#" class="footer-link">Meta AI</a>
+              <a href="#" class="footer-link">Meta AI Articles</a>
+              <a href="#" class="footer-link">Threads</a>
+              <a href="#" class="footer-link">Contact Uploading & Non-Users</a>
+              <a href="#" class="footer-link">Meta Verified</a>
+              <a href="#" class="footer-link">Meta in Indonesia</a>
+            </div>
+
+            <!-- Language & Copyright -->
+            <div class="footer-bottom">
+              <div class="language-selector">
+                <select>
+                  <option value="en">English</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="es">Español</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                </select>
+              </div>
+              <div class="copyright">© 2025 Instagram from Meta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
