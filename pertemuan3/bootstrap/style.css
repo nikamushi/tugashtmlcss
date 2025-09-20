@@ -19,7 +19,7 @@ body {
   border: 3px solid var(--ig-border);
 }
 
-/* Stories */
+/* Highlight */
 .story-img {
   width: 77px;
   height: 77px;
@@ -56,7 +56,6 @@ body {
   transform: scale(1.02);
 }
 
-/* Custom Bootstrap overrides */
 .btn-outline-light {
   color: white;
   border-color: var(--ig-border);
@@ -92,14 +91,12 @@ body {
   border-color: var(--ig-border) !important;
 }
 
-/* ===== INSTAGRAM FOOTER STYLING - AUTHENTIC ===== */
 .instagram-footer {
   background-color: var(--ig-bg);
   margin-top: 4rem;
   padding: 2rem 0 3rem 0;
 }
 
-/* Footer Links - Exact Instagram Style */
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +129,6 @@ body {
   top: 0;
 }
 
-/* Bottom Section */
 .footer-bottom {
   display: flex;
   justify-content: center;
@@ -141,7 +137,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Language Selector - Instagram Style */
 .language-selector {
   position: relative;
 }
@@ -182,7 +177,6 @@ body {
   color: #737373;
 }
 
-/* Copyright - Instagram Style */
 .copyright {
   color: #737373;
   font-size: 12px;
@@ -190,7 +184,6 @@ body {
   text-align: center;
 }
 
-/* Responsive Footer - Instagram Mobile Style */
 @media (max-width: 767.98px) {
   .instagram-footer {
     padding: 1.5rem 0 2rem 0;
@@ -260,7 +253,6 @@ body {
   }
 }
 
-/* Additional spacing adjustments */
 @media (max-width: 480px) {
   .footer-links {
     padding: 0 1rem;
@@ -275,12 +267,10 @@ body {
   }
 }
 
-/* Ensure proper spacing from main content */
 .container-fluid:last-of-type {
   padding-bottom: 0;
 }
 
-/* Additional responsive adjustments for main content */
 @media (max-width: 767.98px) {
   .profile-img {
     width: 80px;
