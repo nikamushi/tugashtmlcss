@@ -29,7 +29,7 @@ Halaman ini adalah replika sederhana struktur profil Instagram menggunakan **Boo
 | `index.html` | Halaman utama, memuat struktur markup dan komponen Bootstrap. |
 | `assets/css/custom.css` | Kustomisasi style (override Bootstrap ringan + efek hover + footer). |
 | `assets/img/*` | Aset gambar profil, highlight, dan feed. |
-| `README.md` | Dokumentasi proyek ini. |
+| `README.md` | Dokumentasi. |
 
 ---
 
