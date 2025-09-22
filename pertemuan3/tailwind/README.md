@@ -153,6 +153,4 @@ Masalah umum & pendekatan:
 - Eksperimen layout responsif intens
 - Hanya sedikit CSS kustom untuk hal yang *benar-benar non-repetitif* (gradient & scrollbar hiding)
 
-Jika proyek berkembang menjadi multi-halaman / multi-komponen, akan mulai dipecah menjadi *extracted component classes* atau bahkan menggunakan *`@apply`* di layer utilities Tailwind.
-
 ---
