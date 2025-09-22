@@ -1,4 +1,4 @@
-# Instagram Profile (Bootstrap Responsive Demo)
+# Instagram Profile (Bootstrap)
 
 Halaman ini adalah replika sederhana struktur profil Instagram menggunakan **Bootstrap 5** dengan fokus pada:
 - Penerapan sistem Grid (`container → row → col`) dan fitur lanjutan (breakpoints, nesting, order).
@@ -21,6 +21,7 @@ Halaman ini adalah replika sederhana struktur profil Instagram menggunakan **Boo
 │       ├── postingan1.png … postingan12.png
 │       └── (tambahan gambar feed lain jika diperlukan)
 └── README.md
+
 ```
 
 | File/Folder | Deskripsi |
