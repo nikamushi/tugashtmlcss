@@ -1,0 +1,395 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+  --ig-bg: #000000;
+  --ig-border: #262626;
+  --ig-text-secondary: #8e8e8e;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+  background-color: var(--ig-bg);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+/* ===== PROFILE HEADER SECTION ===== */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--ig-border);
+}
+
+/* ===== HIGHLIGHTS SECTION ===== */
+.story-img {
+  width: 77px;
+  height: 77px;
+  border: 2px solid var(--ig-border);
+  transition: transform 0.2s ease;
+}
+
+.story-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FEED SECTION ===== */
+.post-card {
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.post-img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+  border-radius: 0;
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 0;
+}
+
+.post-item:hover .post-overlay {
+  opacity: 1;
+}
+
+.post-item:hover .post-img {
+  transform: scale(1.02);
+}
+
+/* ===== BOOTSTRAP COMPONENT OVERRIDES ===== */
+.btn-outline-light {
+  color: white;
+  border-color: var(--ig-border);
+  background-color: var(--ig-border);
+  transition: all 0.2s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #363636;
+  border-color: #363636;
+  color: white;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--ig-border);
+}
+
+.nav-tabs .nav-link {
+  color: var(--ig-text-secondary);
+  border: none;
+  background: none;
+  transition: color 0.2s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: white;
+  border-bottom: 1px solid white;
+  background: none;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #a8a8a8;
+  border-color: transparent;
+}
+
+.text-muted {
+  color: var(--ig-text-secondary) !important;
+}
+
+.border-custom {
+  border-color: var(--ig-border) !important;
+}
+
+/* ===== FOOTER SECTION ===== */
+.instagram-footer {
+  background-color: var(--ig-bg);
+  margin-top: 4rem;
+  padding: 2rem 0 3rem 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.footer-link {
+  color: #737373;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 8px 6px 8px;
+  transition: color 0.1s ease;
+  position: relative;
+}
+
+.footer-link:hover {
+  color: #a8a8a8;
+  text-decoration: none;
+}
+
+.footer-link:not(:last-child)::after {
+  content: "·";
+  color: #737373;
+  position: absolute;
+  right: -12px;
+  top: 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-selector select {
+  background: transparent;
+  border: none;
+  color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 12px;
+}
+
+.language-selector::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #737373;
+  font-size: 8px;
+  pointer-events: none;
+}
+
+.language-selector select:hover {
+  color: #a8a8a8;
+}
+
+.language-selector select option {
+  background-color: var(--ig-bg);
+  color: #737373;
+}
+
+.copyright {
+  color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Mobile (≤576px): 1 kolom */
+@media (max-width: 575.98px) {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--ig-border);
+  }
+
+  .story-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-outline-light {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Footer responsive */
+  .instagram-footer {
+    padding: 1rem 0 1.5rem 0;
+    margin-top: 1.5rem;
+  }
+
+  .footer-links {
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-link {
+    font-size: 10px;
+    margin: 0 4px 3px 4px;
+  }
+
+  .footer-link:not(:last-child)::after {
+    right: -7px;
+    font-size: 10px;
+  }
+
+  .footer-bottom {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .language-selector select {
+    font-size: 10px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+/* Tablet (≥768px): 2-3 kolom */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--ig-border);
+  }
+
+  .story-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-outline-light {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Tablet Large (≥768px): 2-3 kolom */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .story-img {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* Footer responsive */
+  .instagram-footer {
+    padding: 1.5rem 0 2rem 0;
+    margin-top: 2rem;
+  }
+
+  .footer-links {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .footer-link {
+    font-size: 11px;
+    margin: 0 6px 4px 6px;
+  }
+
+  .footer-link:not(:last-child)::after {
+    right: -9px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .language-selector select {
+    font-size: 11px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+/* Desktop (≥992px): 4 kolom */
+@media (min-width: 992px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .story-img {
+    width: 77px;
+    height: 77px;
+  }
+}
+
+/* Large Desktop (≥1200px): 4-6 kolom */
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.feed-section {
+  min-height: 400px;
+}
+
+/* ===== HOVER EFFECTS ===== */
+@media (min-width: 768px) {
+  .post-item:hover .post-overlay {
+    opacity: 1;
+  }
+
+  .post-item:hover .post-img {
+    transform: scale(1.02);
+  }
+}
+
+/* Disable hover on mobile */
+@media (max-width: 767.98px) {
+  .post-item:hover .post-overlay {
+    opacity: 0;
+  }
+
+  .post-item:hover .post-img {
+    transform: none;
+  }
+}
