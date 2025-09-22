@@ -13,13 +13,14 @@ Proyek ini mereplikasi struktur dasar halaman profil Instagram menggunakan **Tai
 ## 1. Struktur FIle
 
 ```
-.
+/.
 ├── index.html
-├── img/
-│   ├── profile.jpg
-│   ├── highlight1.jpg ... highlight4.jpg
-│   ├── postingan1.png ... postingan12.png
-│   └── (tambahan gambar bila diperlukan)
+├── assets/
+│   └── img/
+│       ├── profile.jpg
+│       ├── highlight1.jpg … highlightN.jpg
+│       ├── postingan1.png … postingan12.png
+│       └── (tambahan gambar feed lain jika diperlukan)
 └── README.md
 ```
 
