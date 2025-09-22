@@ -1,6 +1,6 @@
 # Instagram Profile (Tailwind)
 
-Proyek ini mereplikasi struktur dasar halaman profil Instagram menggunakan **Tailwind CSS (CDN mode)** dengan pendekatan **mobile-first**. Fokus utama:
+Halaman ini adalah replika profil Instagram menggunakan **Tailwind CSS (CDN mode)** dengan pendekatan **mobile-first**. Fokus utama:
 - Header profil (foto, username, tombol aksi, statistik)
 - Bio singkat
 - Highlights (stories)
@@ -42,7 +42,7 @@ Live Server → Open with Live Server
 |------------|----------|
 | Tailwind CSS (browser CDN) | Utility-first styling |
 | Font Awesome | Ikon UI (settings, media, dsb) |
-| Native HTML/CSS | Struktur + tambahan minimal (gradient / scrollbar) |
+| Native HTML | Struktur |
 
 ---
 
