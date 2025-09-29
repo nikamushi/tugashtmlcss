@@ -182,8 +182,11 @@ h3 {
 .radius-small {
   border-radius: 5px;
 }
+.radius-medium {
+  border-radius: 15;
+}
 .radius-large {
-  border-radius: 25px;
+  border-radius: 20px;
 }
 .radius-circle {
   border-radius: 50%;
