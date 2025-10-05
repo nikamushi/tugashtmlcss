@@ -14,13 +14,20 @@ const emptyState = document.getElementById("empty-state");
 const inputKota = document.getElementById("input-kota");
 
 const getIcon = (cond) => {
-  const c = cond.toLowerCase();
-  if (c.includes("terang")) return "☀️";
-  if (c.includes("hujan")) return "🌧️";
-  if (c.includes("panas")) return "🔥";
-  if (c.includes("mendung")) return "☁️";
-  if (c.includes("sejuk")) return "🌤️";
-  return "🌤️";
+  const icon = cond.toLowerCase();
+  if (icon.includes("terang")) {
+    return "☀️";
+  } else if (icon.includes("hujan")) {
+    return "🌧️";
+  } else if (icon.includes("panas")) {
+    return "🔥";
+  } else if (icon.includes("mendung")) {
+    return "☁️";
+  } else if (icon.includes("sejuk")) {
+    return "🌤️";
+  } else {
+    return "🌤️";
+  }
 };
 
 const render = (data) => {
@@ -66,7 +73,6 @@ document.getElementById("btn-submit").addEventListener("click", () => {
   const kota = inputKota.value.trim();
 
   if (!kota) {
-    console.warn("Nama kota kosong. Masukkan nama kota terlebih dahulu!");
     alert("Masukkan nama kota terlebih dahulu!");
     return;
   }
