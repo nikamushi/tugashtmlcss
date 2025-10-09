@@ -2,7 +2,7 @@ function runExercises() {
   console.clear(); // bersihkan console sebelum jalan
 
   // SOAL 1: const
-  const universitas = "Universitas Muhammadiya Kalimantan Timur";
+  const universitas = "Universitas Muhammadiyah Kalimantan Timur";
   console.log("Nama Universitas:", universitas);
 
   // SOAL 2: let
